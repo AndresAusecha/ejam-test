@@ -84,10 +84,10 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <h1 className="text-[32px] leading-[44.8px] lg:text-5xl lg:leading-[48px] capitalize">
+        <h1 className="text-[32px] leading-[44.8px] lg:text-5xl lg:leading-[48px] capitalize text-center">
           Wait ! your order in progress.
         </h1>
-        <h2 className="text-base leading-[22.4px] lg:text-2xl lg:leading-6 text-secondary/gray">
+        <h2 className="text-base leading-[22.4px] lg:text-2xl lg:leading-6 text-secondary/gray capitalize text-center mt-2 lg:mt-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing 
         </h2>
       </div>
