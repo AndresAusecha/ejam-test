@@ -12,6 +12,7 @@ import Steps from "./components/steps/Steps.jsx"
 import CheckMarkSign from "./assets/images/svg/CheckMarkSign.jsx"
 import Percentage from "./assets/images/svg/Percentage.jsx"
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import LockIc from "./assets/images/svg/LockIc.jsx"
 
 export default function Home() {
   const [currentNavSlide, setCurrentNavSlide] = useState(0)
@@ -96,8 +97,8 @@ export default function Home() {
       </div>
       <Steps />
       <div className="px-7 w-full lg:px-32 mt mt-6 lg:mt-[38px] ">
-        <div className="bg-secondary/light-gray p-[26px] w-full grid grid-cols-2 gap-6">
-        <div >
+        <div className="bg-secondary/light-gray p-[26px] w-full lg:grid grid-cols-2 gap-6 flex justify-center">
+        <div className="hidden lg:block">
           <img src="./productImage.png" />
           <div>
            <div>
@@ -182,6 +183,67 @@ export default function Home() {
               <AiOutlineArrowRight color="white"/>
             </div>
           </button>
+          <div className="hidden justify-center px-3 py-2 mt-3 rounded border border-secondary/dark-gray-3 xl:flex">
+            <div className="border-r border-secondary/dark-gray-3">
+              <p className="mx-3 text-secondary/gray">
+                Free shipping
+              </p>
+            </div>
+            <div className="flex pl-3 border-r border-secondary/dark-gray-3">
+              <LockIc />
+              <p className="mx-3 text-secondary/gray">
+                Secure 256-bit SSL encryption.
+              </p>
+            </div>
+            <div className="flex">
+              <img src="./amex.png" />
+              <img src="./apple-pay.png" />
+              <img src="./gpay.png" />
+              <img src="./mastercard.png" />
+              <img src="./paypal.png" />
+              <img src="./shop-pay.png" />
+              <img src="./visa.png" />
+            </div>
+          </div>
+          <div className="flex flex-col justify-center px-3 py-2 mt-3 rounded border xl:hidden border-secondary/dark-gray-3">
+            <div className="flex">
+              <div className="pb-2 border-secondary/dark-gray-3">
+                <p className="pr-3 mx-3 border-r text-secondary/gray">
+                  Free shipping
+                </p>
+              </div>
+              <div className="flex pl-3 border-secondary/dark-gray-3">
+                <LockIc />
+                <p className="mx-3 text-secondary/gray">
+                  Secure 256-bit SSL encryption.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-1 justify-center pt-2 border-t">
+              <img src="./amex.png" />
+              <img src="./apple-pay.png" />
+              <img src="./gpay.png" />
+              <img src="./mastercard.png" />
+              <img src="./paypal.png" />
+              <img src="./shop-pay.png" />
+              <img src="./visa.png" />
+            </div>
+          </div>
+          <p className="mt-4 font-medium text-center uppercase text-secondary/red">
+            No thanks, I don’t want this.
+          </p>
+          <div className="flex mt-8">
+            <img src="./guarantee.png" className="mr-6 w-12 h-12" />
+            <p className="text-xs text-secondary/gray">
+              If you are not completely thrilled with your Clarifion - We have a
+              {' '}
+              <span className="font-bold">
+                30 day satisfaction guarantee. 
+              </span>              
+              {' '}
+              Please refer to our return policy at the bottom of the page for more details. Happy Shopping!
+            </p>
+          </div>
         </div>
         </div>
       </div>
