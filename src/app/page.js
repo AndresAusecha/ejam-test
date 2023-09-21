@@ -92,6 +92,41 @@ export default function Home() {
         </h2>
       </div>
       <Steps />
+      <div className="px-7 w-full lg:px-32 mt mt-6 lg:mt-[38px] ">
+        <div className="bg-secondary/light-gray p-[26px] w-full grid grid-cols-2 gap-6">
+        <div >
+          <img src="./productImage.png" />
+          <div>
+           <div>
+
+           </div>
+          </div>
+        </div>
+        <div>
+          <p className="text-2xl leading-[33.6px] lg:text-[32px] lg:leading-[44.8px]">
+            <span className="font-bold text-primary/blue">
+              ONE TIME ONLY
+            </span>
+            {' '}
+            special price for 6 extra Clarifion for only{' '}
+            <span className="font-bold text-primary/blue">$14 each</span>{' '}
+            ($84.00 total!)
+          </p>
+          <div className="flex mt-[22px]">
+            <img src="./productImageSmall.png" />
+            <div className="ml-4 lg:ml-5">
+              <div className="flex items-center">
+                <p className="text-sm font-normal lg:text-xl">Clarifion Air Ionizer</p>
+                <div className="flex items-center ml-11">
+                  <p className="mr-2 text-xs line-through text-secondary/dark-gray">$180</p>
+                  <p className="font-semibold text-primary/blue">$84</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
     </main>
   )
 }
