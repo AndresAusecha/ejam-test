@@ -8,6 +8,7 @@ import LeftChevron from "./assets/images/svg/leftChevron.jsx"
 import RightChevron from "./assets/images/svg/rightChevron.jsx"
 import React, { useState } from "react"
 import cx from "classnames"
+import Steps from "./components/steps/Steps.jsx"
 
 export default function Home() {
   const [currentNavSlide, setCurrentNavSlide] = useState(0)
@@ -90,6 +91,7 @@ export default function Home() {
           Lorem ipsum dolor sit amet, consectetur adipiscing 
         </h2>
       </div>
+      <Steps />
     </main>
   )
 }
