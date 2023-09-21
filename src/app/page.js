@@ -11,6 +11,7 @@ import cx from "classnames"
 import Steps from "./components/steps/Steps.jsx"
 import CheckMarkSign from "./assets/images/svg/CheckMarkSign.jsx"
 import Percentage from "./assets/images/svg/Percentage.jsx"
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export default function Home() {
   const [currentNavSlide, setCurrentNavSlide] = useState(0)
@@ -175,6 +176,12 @@ export default function Home() {
               {' '}
             </p>
           </div>
+          <button className="px-16 py-4 mt-5 w-full rounded-full bg-primary/green">
+            <div className="flex justify-center items-center w-full">
+              <p className="mr-4 text-sm font-bold text-white uppercase">Yes - Claim my discount</p>
+              <AiOutlineArrowRight color="white"/>
+            </div>
+          </button>
         </div>
         </div>
       </div>
