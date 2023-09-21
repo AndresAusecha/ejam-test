@@ -9,6 +9,8 @@ import RightChevron from "./assets/images/svg/rightChevron.jsx"
 import React, { useState } from "react"
 import cx from "classnames"
 import Steps from "./components/steps/Steps.jsx"
+import CheckMarkSign from "./assets/images/svg/CheckMarkSign.jsx"
+import Percentage from "./assets/images/svg/Percentage.jsx"
 
 export default function Home() {
   const [currentNavSlide, setCurrentNavSlide] = useState(0)
@@ -113,7 +115,7 @@ export default function Home() {
             ($84.00 total!)
           </p>
           <div className="flex mt-[22px]">
-            <img src="./productImageSmall.png" />
+            <img src="./productImageSmall.png" className="w-20 h-20"/>
             <div className="ml-4 lg:ml-5">
               <div className="flex items-center">
                 <p className="text-sm font-normal lg:text-xl">Clarifion Air Ionizer</p>
@@ -122,7 +124,56 @@ export default function Home() {
                   <p className="font-semibold text-primary/blue">$84</p>
                 </div>
               </div>
+              <img src="./stars.png" className="mt-2"/>
+              <div className="flex mt-2">
+                <div className="flex justify-center items-center w-3 h-3 rounded-full bg-primary/light-blue">
+                  <div className="w-[6px] h-[6px] rounded-full bg-primary/blue"></div>
+                </div>
+                <p className="ml-4 text-secondary/dark-gray-2">
+                  12 left in stock
+                </p>
+              </div>
             </div>
+          </div>
+          <p className="mt-4 text-center">
+            Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.
+          </p>
+          <div className="mt-2">
+            <div className="flex mt-4">
+              <CheckMarkSign />
+              <p className="ml-4 text-secondary/gray">
+                Negative Ion Technology may <span>help with allergens</span>
+              </p>
+            </div>
+            <div className="flex mt-4">
+              <CheckMarkSign />
+              <p  className="ml-4 text-secondary/gray">
+                Designed for <span>air rejuvenation</span>
+              </p>
+            </div>
+            <div className="flex mt-4">
+            <CheckMarkSign />
+              <p  className="ml-4 text-secondary/gray">
+                <span>Perfect for every room</span> in all types of places.
+              </p>
+            </div>
+          </div>
+          <div className="flex px-3 py-4 mt-6 bg-primary/light-blue rounded-[10px]">
+            <Percentage />
+            <p className="ml-4 text-sm font-normal">
+              Save <span className="text-primary/blue">53%</span> and get 
+              {' '}
+              <span className="text-primary/blue">
+                6 extra Clarifision 
+              </span> 
+              {' '}
+              for only 
+              {' '}
+              <span className="text-primary/blue">
+                $14 Each.
+              </span>
+              {' '}
+            </p>
           </div>
         </div>
         </div>

@@ -16,9 +16,11 @@ module.exports = {
         "primary/dark": "#252F3D",
         "primary/green": "#59AE43",
         "primary/blue": "#2C7EF8",
+        "primary/light-blue": "#E3EEFF",
         "secondary/gray": "#4D5254",
         "secondary/light-gray": "#FAFAFA",
-        "secondary/dark-gray": "#969696"
+        "secondary/dark-gray": "#969696",
+        "secondary/dark-gray-2": "#37465A"
       }
     },
   },
