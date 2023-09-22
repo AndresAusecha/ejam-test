@@ -1,5 +1,5 @@
 # Purpose 
-This mockup was created as a test for a company in a recruiting process, it was developed from a link.
+This mockup was created as a test for a company in a recruiting process, it was developed from a Figma design.
 
 ## External link
 The deploy of the mockup can be found in the next link:
