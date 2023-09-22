@@ -26,7 +26,7 @@ export default () => {
               {step.name}
             </p>
             <p className={cx("hidden lg:block ml-5 text-xl leading-[22px] mt-3 lg:mt-0", step.active ? "font-bold" : "font-normal")}>
-              Step {index}: {step.name}
+              Step {index + 1}: {step.name}
             </p>
           </div>
         )
