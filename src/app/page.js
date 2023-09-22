@@ -161,7 +161,7 @@ export default function Home() {
           </p>
             </div>
           </div>
-          <p className="mt-4 text-xs leading-4 text-center text-secondary/gray lg:hidden">
+          <p className="mt-4 text-xs leading-4 text-center text-secondary/gray lg:hidden md:text-left">
             Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.
           </p>
           <div className="mt-2">
@@ -219,7 +219,7 @@ export default function Home() {
                 Secure 256-bit SSL encryption.
               </p>
             </div>
-            <div className="flex">
+            <div className="flex ml-3">
               <img src="./amex.png" />
               <img src="./apple-pay.png" />
               <img src="./gpay.png" />
