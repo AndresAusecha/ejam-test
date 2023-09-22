@@ -13,6 +13,7 @@ import CheckMarkSign from "./assets/images/svg/CheckMarkSign.jsx"
 import Percentage from "./assets/images/svg/Percentage.jsx"
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import LockIc from "./assets/images/svg/LockIc.jsx"
+import Verified from "./assets/images/svg/Verified.jsx"
 
 export default function Home() {
   const [currentNavSlide, setCurrentNavSlide] = useState(0)
@@ -87,11 +88,12 @@ export default function Home() {
           <img src="./norton-antivirus-logo.png" className="w-11 h-4 lg:w-[88px] lg:h-8" />
         </div>
       </div>
+      <div className="pt-10 bg-secondary/light-gray lg:pb-0 lg:bg-transparent">
       <div className="flex flex-col items-center">
         <h1 className="text-[32px] leading-[44.8px] lg:text-5xl lg:leading-[48px] capitalize text-center">
           Wait ! your order in progress.
         </h1>
-        <h2 className="text-base leading-[22.4px] lg:text-2xl lg:leading-6 text-secondary/gray capitalize text-center mt-2 lg:mt-3">
+        <h2 className="text-base leading-[22.4px] lg:text-2xl lg:leading-6 text-secondary/gray capitalize text-center mt-2 lg:mt-3 mx-7">
           Lorem ipsum dolor sit amet, consectetur adipiscing 
         </h2>
       </div>
@@ -100,10 +102,25 @@ export default function Home() {
         <div className="bg-secondary/light-gray p-[26px] w-full lg:grid grid-cols-2 gap-6 flex justify-center">
         <div className="hidden lg:block">
           <img src="./productImage.png" />
-          <div>
-           <div>
-
+          <div className="py-4 mt-4">
+           <div className="flex items-center">
+              <img src="./girlInComment.png" />
+              <div className="ml-2">
+                <img src="./stars.png"/>
+                <div className="flex items-center mt-2">
+                  <p className="m-0 font-bold font text-secondary/dark-gray-4">
+                    Ken T.
+                  </p>
+                  <div className="flex items-center">
+                    <Verified className="mx-2" />
+                    <p className="text-xs leading-3 text-secondary/green">Verified customer</p>
+                  </div>
+                </div>
+              </div>
            </div>
+           <p className="mt-4 text-base">
+              “As soon as the Clarifions arrived I put one in my bedroom. This was late in the afternoon. When I went to the bedroom in the evening it smelled clean. When I went to bed I felt I could breathe better. Wonderful.”
+            </p>
           </div>
         </div>
         <div>
@@ -246,6 +263,7 @@ export default function Home() {
           </div>
         </div>
         </div>
+      </div>
       </div>
     </main>
   )

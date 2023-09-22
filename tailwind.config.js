@@ -22,7 +22,9 @@ module.exports = {
         "secondary/dark-gray": "#969696",
         "secondary/dark-gray-2": "#37465A",
         "secondary/dark-gray-3": "#CFCFCF",
-        "secondary/red": "#F82C2C"
+        "secondary/red": "#F82C2C",
+        "secondary/green": "#5BB59A",
+        "secondary/dark-gray-4": "#333333"
       }
     },
   },
