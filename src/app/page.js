@@ -85,7 +85,7 @@ export default function Home() {
       <div className="flex justify-between px-7 w-full lg:px-32 h-[62px] lg:h-[98px] items-center">
         <img src="./companyLogo.png" className="w-[106.67px] h-5 lg:w-48 lg:h-9" />
         <div className="flex items-center">
-          <img src="./MCAfee.png" className="mr-4 w-11 h-4 lg:mr-8" />
+          <img src="./MCAfee.png" className="mr-4 w-11 h-4 lg:w-20 lg:h-8 lg:mr-8" />
           <img src="./norton-antivirus-logo.png" className="w-11 h-4 lg:w-[88px] lg:h-8" />
         </div>
       </div>
