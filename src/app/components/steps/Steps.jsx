@@ -22,10 +22,10 @@ export default () => {
               </div> 
               : <CheckedStep className="w-6 h-5 lg:w-11 lg:h-10" />
             }
-            <p className="block lg:hidden text-xs leading-[13.2px] font-normal">
+            <p className={cx("block lg:hidden text-xs leading-[13.2px] mt-3", step.active ? "font-bold" : "font-normal")}>
               {step.name}
             </p>
-            <p className={cx("hidden lg:block ml-5 text-xl leading-[22px] ", step.active ? "font-bold" : "font-normal")}>
+            <p className={cx("hidden lg:block ml-5 text-xl leading-[22px] mt-3", step.active ? "font-bold" : "font-normal")}>
               Step {index}: {step.name}
             </p>
           </div>

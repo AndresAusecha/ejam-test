@@ -89,7 +89,7 @@ export default function Home() {
           <img src="./norton-antivirus-logo.png" className="w-11 h-4 lg:w-[88px] lg:h-8" />
         </div>
       </div>
-      <div className="pt-10 bg-secondary/light-gray lg:pb-0 lg:bg-transparent">
+      <div className="pt-10 pb-4 bg-secondary/light-gray lg:bg-transparent lg:pb-10">
       <div className="flex flex-col items-center">
         <h1 className="text-[32px] leading-[44.8px] lg:text-5xl lg:leading-[48px] capitalize text-center">
           Wait ! your order in progress.
@@ -100,7 +100,7 @@ export default function Home() {
       </div>
       <Steps />
       <div className="px-7 w-full lg:px-32 mt mt-6 lg:mt-[38px] ">
-        <div className="bg-secondary/light-gray p-[26px] w-full lg:grid grid-cols-2 gap-6 flex justify-center">
+        <div className="bg-secondary/light-gray lg:p-[26px] w-full lg:grid grid-cols-2 gap-6 flex justify-center">
         <div className="hidden lg:block">
           <img src="./productImage.png" />
           <div className="py-4 mt-4">
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <p className="text-2xl leading-[33.6px] lg:text-[32px] lg:leading-[44.8px]">
+          <p className="text-2xl leading-[33.6px] lg:text-[32px] lg:leading-[44.8px] text-center lg:text-left capitalize">
             <span className="font-bold text-primary/blue">
               ONE TIME ONLY
             </span>
@@ -134,17 +134,20 @@ export default function Home() {
             <span className="font-bold text-primary/blue">$14 each</span>{' '}
             ($84.00 total!)
           </p>
+          <div className="flex justify-center">
+            <img src="./productImage.png" className="w-80 h-[328px] mt-3 block lg:hidden" />
+          </div>
           <div className="flex mt-[22px]">
-            <img src="./productImageSmall.png" className="w-20 h-20"/>
-            <div className="ml-4 lg:ml-5">
-              <div className="flex items-center">
+            <img src="./productImageSmall.png" className="w-24 h-24"/>
+            <div className="ml-4 w-full lg:ml-5">
+              <div className="flex justify-between items-center w-full">
                 <p className="text-sm font-normal lg:text-xl">Clarifion Air Ionizer</p>
                 <div className="flex items-center ml-11">
                   <p className="mr-2 text-xs line-through text-secondary/dark-gray">$180</p>
                   <p className="font-semibold text-primary/blue">$84</p>
                 </div>
               </div>
-              <img src="./stars.png" className="mt-2"/>
+              <img src="./stars.png" className="mt-1"/>
               <div className="flex mt-2">
                 <div className="flex justify-center items-center w-3 h-3 rounded-full bg-primary/light-blue">
                   <div className="w-[6px] h-[6px] rounded-full bg-primary/blue"></div>
@@ -153,32 +156,35 @@ export default function Home() {
                   12 left in stock
                 </p>
               </div>
+              <p className="hidden mt-3 text-secondary/gray lg:block">
+            Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.
+          </p>
             </div>
           </div>
-          <p className="mt-4 text-center">
+          <p className="mt-4 text-center text-secondary/gray lg:hidden">
             Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.
           </p>
           <div className="mt-2">
             <div className="flex mt-4">
               <CheckMarkSign />
               <p className="ml-4 text-secondary/gray">
-                Negative Ion Technology may <span>help with allergens</span>
+                Negative Ion Technology may <span className="font-bold">help with allergens</span>
               </p>
             </div>
             <div className="flex mt-4">
               <CheckMarkSign />
               <p  className="ml-4 text-secondary/gray">
-                Designed for <span>air rejuvenation</span>
+                Designed for <span className="font-bold">air rejuvenation</span>
               </p>
             </div>
             <div className="flex mt-4">
             <CheckMarkSign />
               <p  className="ml-4 text-secondary/gray">
-                <span>Perfect for every room</span> in all types of places.
+                <span className="font-bold">Perfect for every room</span> in all types of places.
               </p>
             </div>
           </div>
-          <div className="flex px-3 py-4 mt-6 bg-primary/light-blue rounded-[10px]">
+          <div className="flex px-3 py-4 mt-6 bg-primary/light-blue rounded-[10px] items-center">
             <Percentage />
             <p className="ml-4 text-sm font-normal">
               Save <span className="text-primary/blue">53%</span> and get 
@@ -195,7 +201,7 @@ export default function Home() {
               {' '}
             </p>
           </div>
-          <button className="px-16 py-4 mt-5 w-full rounded-full bg-primary/green">
+          <button className="px-4 py-4 mt-5 w-full rounded-full lg:px-16 bg-primary/green">
             <div className="flex justify-center items-center w-full">
               <p className="mr-4 text-sm font-bold text-white uppercase">Yes - Claim my discount</p>
               <AiOutlineArrowRight color="white"/>
@@ -232,7 +238,7 @@ export default function Home() {
               </div>
               <div className="flex pl-3 border-secondary/dark-gray-3">
                 <LockIc />
-                <p className="mx-3 text-secondary/gray">
+                <p className="ml-3 text-secondary/gray">
                   Secure 256-bit SSL encryption.
                 </p>
               </div>
