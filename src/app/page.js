@@ -14,6 +14,7 @@ import Percentage from "./assets/images/svg/Percentage.jsx"
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import LockIc from "./assets/images/svg/LockIc.jsx"
 import Verified from "./assets/images/svg/Verified.jsx"
+import Footer from "./components/footer/Footer.jsx"
 
 export default function Home() {
   const [currentNavSlide, setCurrentNavSlide] = useState(0)
@@ -265,6 +266,7 @@ export default function Home() {
         </div>
       </div>
       </div>
+      <Footer />
     </main>
   )
 }
